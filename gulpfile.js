@@ -27,7 +27,6 @@ gulp.task('scripts', ['lint'], function() {
   gulp.src([
     './src/js/scripts.js'
   ])
-  .pipe(concat('scripts.js'))
   .pipe(plumber())
   .pipe(gulp.dest('./dist/js'));
 });
